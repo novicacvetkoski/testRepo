@@ -57,7 +57,7 @@ def analyze_sentiment():
         code = data.get('code')  # Get the 'code' argument
 
         # Load the CSV and get the corresponding name for the code
-        df = pd.read_csv("C:\\Users\\Skipio\\Desktop\\ScipioDS SpotterMK main Homework3-Project\\scripts\\NameScrape.csv", encoding="utf-8")
+        df = pd.read_csv("NameScrape.csv", encoding="utf-8")
         result = df.loc[df['code'] == code]['name'].iloc[0]
 
         # Perform sentiment analysis with the name
